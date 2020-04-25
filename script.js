@@ -31,7 +31,7 @@ var questions = [
 // Declared vars
 var score = 0;
 var scoreIndex = 0;
-var timer = document.querySelector("#startQuiz");
+var timer = document.querySelector("#time");
 var time = document.querySelector("#time");
 var questionsDiv = document.querySelector("#questionsDiv");
 var secondsRem = 60;
@@ -39,3 +39,15 @@ var secondsRem = 60;
 
 
 // Timer Function
+function setTime() {
+    var timeInterval = setInterval(function () {
+        secondsRem--;
+        timer.textContent = "Timer" + secondsRem;
+
+        if(secondsRem === 0) {
+            clearInterval(timeInterval);
+            alert("Sorry, you are out of time!");
+            
+        }
+    })
+})
