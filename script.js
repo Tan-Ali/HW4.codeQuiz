@@ -55,3 +55,5 @@ function setTime() {
     }, 1000) 
     return (score)
     }
+
+    
