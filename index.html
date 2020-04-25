@@ -17,7 +17,7 @@
         <nav class="nav nav-pills nav-fill">
             <a class="nav-item nav-link" href="#">High Scores</a>
             <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Javascript Quiz</a>
-            <a class="nav-item nav-link" href="#">Time Left: 90</a>
+            <a class="nav-item nav-link disabled" href="#">Time Left: 1:00</a>
         </nav>
     </header>
 
@@ -29,12 +29,14 @@
                 <div class="card">
                     <div class="card-type">
                         <div class="col-sm-auto col-lg-8">
-                            <h1 class="Welcome">Quiz</h1>
+                            <div id = "questionsDiv">
+                                <h1 class="Welcome">Quiz</h1>
                                 <p>
                                     Welcome to Javascript Quiz! Try to answer the following five questions in 90 seconds. Click the start button when you are ready!
                                 </p>
                                 
                                 <button id="startQuiz" class="btn btn-success">Start</button>
+                            </div>
                         </div>
                     </div>
                 </div>

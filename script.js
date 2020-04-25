@@ -22,8 +22,12 @@ var questions = [
     },
     {
         Q = "What does JSON.Parse mean?",
-        C = ["object to string, string to object, object to array, string to array"]
+        C = ["object to string, string to object, object to array, string to array"],
         A = "string to object"
     },
     
 ];
+
+// Declared vars
+var score = 0;
+var scoreIndex = 0;
