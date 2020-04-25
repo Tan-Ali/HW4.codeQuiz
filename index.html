@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -13,16 +15,33 @@
 <body>
     <header>
         <nav class="nav nav-pills nav-fill">
-            <a class="nav-item nav-link active" href="#">High Scores</a>
+            <a class="nav-item nav-link" href="#">High Scores</a>
             <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Javascript Quiz</a>
-            <a class="nav-item nav-link" href="#">Time Left</a>
+            <a class="nav-item nav-link" href="#">Time Left: 90</a>
         </nav>
     </header>
 
+    <br>
+
     <main>
-
-
+        <div class="container">
+            <div class="row">
+                <div class="card">
+                    <div class="card-type">
+                        <div class="col-sm-auto col-lg-8">
+                            <h1 class="Welcome">Quiz</h1>
+                                <p>
+                                    Welcome to Javascript Quiz! Try to answer the following five questions in 90 seconds. Click the start button when you are ready!
+                                </p>
+                                
+                                <button id="startQuiz" class="btn btn-success">Start</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    
+
 </body>
+
 </html>
