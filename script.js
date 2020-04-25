@@ -1,38 +1,37 @@
 // Questions for quiz
 var questions = [
     {
-        Q = "What characters are used to store/create an array?",
-        C = ["brackets, curly brackets, parenthses, double quotes"],
-        A = "brackets"
+        question : "What characters are used to store/create an array?",
+        choices : ["brackets, curly brackets, parenthses, double quotes"],
+        answer : "brackets"
     },
     {
-        Q = "What characters are used to store/create a string?",
-        C = ["brackets, curly brackets, parenthses, double quotes"],
-        A = "double quotes"
+        question : "What characters are used to store/create a string?",
+        choices : ["brackets, curly brackets, parenthses, double quotes"],
+        answer : "double quotes"
     },
     {
-        Q = "How do we create random integers?",
-        C = ["Math.floor(Math.random() * #), Math.random(Math.floor() * #), Math.parse(Math.random() * #)"],
-        A = "Math.floor(Math.random() * #)"
+        question : "How do we create random integers?",
+        choices : ["Math.floor(Math.random() * #), Math.random(Math.floor() * #), Math.parse(Math.random() * #)"],
+        answer : "Math.floor(Math.random() * #)"
     },
     {
-        Q = "What does i++ mean?",
-        C = ["index = index + 1, index = index + 2, index = number + 1, index"],
-        A = "index = index + 1"
+        question : "What does i++ mean?",
+        choices : ["index = index + 1, index = index + 2, index = number + 1, index"],
+        answer : "index = index + 1"
     },
     {
-        Q = "What does JSON.Parse mean?",
-        C = ["object to string, string to object, object to array, string to array"],
-        A = "string to object"
+        question : "What does JSON.Parse mean?",
+        choices : ["object to string, string to object, object to array, string to array"],
+        answer : "string to object"
     },
     
 ];
 
 // Declared vars
+var i = 0;
 var score = 0;
-var scoreIndex = 0;
 var timer = document.querySelector("#time");
-var time = document.querySelector("#time");
 var questionsDiv = document.querySelector("#questionsDiv");
 var secondsRem = 60;
 
@@ -49,5 +48,10 @@ function setTime() {
             alert("Sorry, you are out of time!");
             
         }
-    })
-})
+
+        else if(i === questions.length) {
+            clearInterval(timeInterval);
+        }
+    }, 1000) 
+    return (score)
+    }
