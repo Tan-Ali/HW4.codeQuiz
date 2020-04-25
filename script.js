@@ -32,12 +32,10 @@ var questions = [
 var score = 0;
 var scoreIndex = 0;
 var timer = document.querySelector("#startQuiz");
+var time = document.querySelector("#time");
 var questionsDiv = document.querySelector("#questionsDiv");
 var secondsRem = 60;
-var holdInterval = 0;
+
 
 
 // Timer Function
-
-
-
