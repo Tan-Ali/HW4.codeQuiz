@@ -31,3 +31,13 @@ var questions = [
 // Declared vars
 var score = 0;
 var scoreIndex = 0;
+var timer = document.querySelector("#startQuiz");
+var questionsDiv = document.querySelector("#questionsDiv");
+var secondsRem = 60;
+var holdInterval = 0;
+
+
+// Timer Function
+
+
+
