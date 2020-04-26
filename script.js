@@ -131,3 +131,17 @@ function setTime() {
         questionsDiv.textContent = "";
     });
    }
+
+
+   document.getElementById("answerOne").addEventListener("ckick", function () {
+       if (question[i]["choices"][0] == question[i]["answer"]) {
+           questionsDiv.textContent = "You are correct. Great Job!";
+           score++;
+       }
+       else {
+           questionsDiv.textContent = "You are wrong. Try harder!";
+           secondsRem -= 10;
+       }
+       i++;
+       quizQuestions();
+   })
