@@ -38,7 +38,7 @@ var answerOne = document.getElementById("answerOne");
 var answerTwo = document.getElementById("answerTwo");
 var answerThree = document.getElementById("answerThree");
 var answerFour = document.getElementById("answerFour");
-
+var highScoreList = [];
 
 
 // Timer Function
@@ -111,4 +111,23 @@ function setTime() {
     
    }
 
-   
+   function storeHighScore(scoreText) {
+
+    var highScores = JSON.parse(localStorage.getItem("scores"));
+    if (highScores === null) {
+        highScoreList.push(scoreText);
+        localStorage.setItem("scores", JSON.stringify(highScoreList));
+
+    }
+
+    else {
+        highScores.push(scoreText);
+        localStorage.setItem("scores", JSON.stringify(highScores));
+    }
+
+    document.getElementById("startQuiz").addEventListener("click", quizQuestions);
+    document.getElementById("startQuiz").addEventListener("click", setTime);
+    document.getElementById("startQuiz").addEventListener("click", function () {
+        questionsDiv.textContent = "";
+    });
+   }
