@@ -89,4 +89,26 @@ function setTime() {
         })
     }
 
+   function quizQuestions() {
+
+    answerOne.hidden = false
+    answerTwo.hidden = false
+    answerThree.hidden = false
+    answerFour.hidden = false
     
+    document.getElementById("startQuiz").hidden = true;
+        if (i === questions.length) {
+            endOFGame();
+        }
+
+        else {
+            document.getElementById("question").textContent = questions[i]["question"];        
+            document.getElementById("answerOne").textContent = questions[i]["choices"][0];        
+            document.getElementById("answerTwo").textContent = questions[i]["choices"][1];        
+            document.getElementById("answerThree").textContent = questions[i]["choices"][2];        
+            document.getElementById("answerFour").textContent = questions[i]["choices"][3];
+        }
+    
+   }
+
+   
