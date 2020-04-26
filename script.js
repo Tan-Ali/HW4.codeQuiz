@@ -45,7 +45,7 @@ var highScoreList = [];
 function setTime() {
     var timeInterval = setInterval(function () {
         secondsRem--;
-        timer.textContent = "Timer" + secondsRem;
+        timer.textContent = "Time: " + secondsRem;
 
         if(secondsRem === 0) {
             clearInterval(timeInterval);
@@ -76,7 +76,7 @@ function setTime() {
         document.getElementById("question").textContent = "Your Score: " + score;
         
         document.body.children[1].appendChild(inputTag);
-        document.getElementsByTagName("input").setAttribute("id", "inputBox");
+        document.getElementsByTagName("input")[0].setAttribute("id", "inputBox");
 
         document.body.children[1].appendChild(submitBtn);
         submitBtn.addEventListener("click", function(event){
@@ -135,6 +135,10 @@ function setTime() {
         questionsDiv.textContent = "";
     });
  
+answerOne.hidden = true;
+answerTwo.hidden = true;
+answerThree.hidden = true;
+answerFour.hidden = true;
 
 // Questions and Answers
    document.getElementById("answerOne").addEventListener("ckick", function () {
