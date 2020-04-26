@@ -34,6 +34,10 @@ var score = 0;
 var timer = document.querySelector("#time");
 var questionsDiv = document.querySelector("#questionsDiv");
 var secondsRem = 60;
+var answerOne = document.getElementById("answerOne");
+var answerTwo = document.getElementById("answerTwo");
+var answerThree = document.getElementById("answerThree");
+var answerFour = document.getElementById("answerFour");
 
 
 
