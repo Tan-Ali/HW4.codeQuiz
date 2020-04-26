@@ -68,10 +68,15 @@ function setTime() {
         var scoreEl = document.createElement("h1");
         var inputTag = document.createElement("input");
         var submitBtn = document.createElement("button");
+        
+        answerOne.remove()
+        answerTwo.remove()
+        answerThree.remove()
+        answerFour.remove()
 
         
         document.body.children[1].appendChild(scoreEl);
-        document.getElementById("h1")[0].setAttribute("id", "score");
+        document.getElementsByTagName("h1")[0].setAttribute("id", "score");
 
         document.getElementById("question").textContent = "Your Score: " + score;
         
@@ -81,7 +86,6 @@ function setTime() {
         document.body.children[1].appendChild(submitBtn);
         submitBtn.addEventListener("click", function(event){
             event.preventDefault();
-
             var scoreText = new Object();
             scoreText.name = inputTag.value.trim();
             scoreText.scoreNew = score;
@@ -93,10 +97,10 @@ function setTime() {
 
    function quizQuestions() {
 
-    answerOne.hidden = false
-    answerTwo.hidden = false
-    answerThree.hidden = false
-    answerFour.hidden = false
+    answerOne.hidden = false;
+    answerTwo.hidden = false;
+    answerThree.hidden = false;
+    answerFour.hidden = false;
     
     document.getElementById("startQuiz").hidden = true;
         if (i === questions.length) {
@@ -142,7 +146,7 @@ answerFour.hidden = true;
 
 // Questions and Answers
    document.getElementById("answerOne").addEventListener("ckick", function () {
-       if (question[i]["choices"][0] == question[i]["answer"]) {
+       if (question[i]["choices"][0] === question[i]["answer"]) {
            questionsDiv.textContent = "You are correct. Great Job!";
            score++;
        }
@@ -155,7 +159,7 @@ answerFour.hidden = true;
    })
 
    document.getElementById("answerTwo").addEventListener("ckick", function () {
-    if (question[i]["choices"][1] == question[i]["answer"]) {
+    if (question[i]["choices"][1] === question[i]["answer"]) {
         questionsDiv.textContent = "You are correct. Great Job!";
         score++;
     }
@@ -168,7 +172,7 @@ answerFour.hidden = true;
 })
 
 document.getElementById("answerThree").addEventListener("ckick", function () {
-    if (question[i]["choices"][3] == question[i]["answer"]) {
+    if (question[i]["choices"][3] === question[i]["answer"]) {
         questionsDiv.textContent = "You are correct. Great Job!";
         score++;
     }
@@ -182,7 +186,7 @@ document.getElementById("answerThree").addEventListener("ckick", function () {
 
 
 document.getElementById("answerFour").addEventListener("ckick", function () {
-    if (question[i]["choices"][3] == question[i]["answer"]) {
+    if (question[i]["choices"][3] === question[i]["answer"]) {
         questionsDiv.textContent = "You are correct. Great Job!";
         score++;
     }
