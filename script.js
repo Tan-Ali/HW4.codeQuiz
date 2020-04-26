@@ -85,8 +85,10 @@ function setTime() {
             var scoreText = new Object();
             scoreText.name = inputTag.value.trim();
             scoreText.scoreNew = score;
+            storeHighScore(scoreText);
+            window.location.href = "highscore.html";
             
-        })
+        });
     }
 
    function quizQuestions() {
@@ -124,15 +126,17 @@ function setTime() {
         highScores.push(scoreText);
         localStorage.setItem("scores", JSON.stringify(highScores));
     }
+}
+
 
     document.getElementById("startQuiz").addEventListener("click", quizQuestions);
     document.getElementById("startQuiz").addEventListener("click", setTime);
     document.getElementById("startQuiz").addEventListener("click", function () {
         questionsDiv.textContent = "";
     });
-   }
+ 
 
-
+// Questions and Answers
    document.getElementById("answerOne").addEventListener("ckick", function () {
        if (question[i]["choices"][0] == question[i]["answer"]) {
            questionsDiv.textContent = "You are correct. Great Job!";
@@ -145,3 +149,44 @@ function setTime() {
        i++;
        quizQuestions();
    })
+
+   document.getElementById("answerTwo").addEventListener("ckick", function () {
+    if (question[i]["choices"][1] == question[i]["answer"]) {
+        questionsDiv.textContent = "You are correct. Great Job!";
+        score++;
+    }
+    else {
+        questionsDiv.textContent = "You are wrong. Try harder!";
+        secondsRem -= 10;
+    }
+    i++;
+    quizQuestions();
+})
+
+document.getElementById("answerThree").addEventListener("ckick", function () {
+    if (question[i]["choices"][3] == question[i]["answer"]) {
+        questionsDiv.textContent = "You are correct. Great Job!";
+        score++;
+    }
+    else {
+        questionsDiv.textContent = "You are wrong. Try harder!";
+        secondsRem -= 10;
+    }
+    i++;
+    quizQuestions();
+})
+
+
+document.getElementById("answerFour").addEventListener("ckick", function () {
+    if (question[i]["choices"][3] == question[i]["answer"]) {
+        questionsDiv.textContent = "You are correct. Great Job!";
+        score++;
+    }
+    else {
+        questionsDiv.textContent = "You are wrong. Try harder!";
+        secondsRem -= 10;
+    }
+    i++;
+    quizQuestions();
+})
+
