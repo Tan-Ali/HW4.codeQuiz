@@ -2,27 +2,27 @@
 var questions = [
     {
         question : "What characters are used to store/create an array?",
-        choices : ["brackets, curly brackets, parenthses, double quotes"],
+        choices : ["brackets", "curly brackets", "parenthses", "double quotes"],
         answer : "brackets"
     },
     {
         question : "What characters are used to store/create a string?",
-        choices : ["brackets, curly brackets, parenthses, double quotes"],
+        choices : ["brackets", "curly brackets", "parenthses", "double quotes"],
         answer : "double quotes"
     },
     {
         question : "How do we create random integers?",
-        choices : ["Math.floor(Math.random() * #), Math.random(Math.floor() * #), Math.parse(Math.random() * #)"],
+        choices : ["Math.floor(Math.random() * #)", "Math.random(Math.floor() * #)", "Math.random.Math.random (* #)", "Math.parse(Math.random() * #)"],
         answer : "Math.floor(Math.random() * #)"
     },
     {
         question : "What does i++ mean?",
-        choices : ["index = index + 1, index = index + 2, index = number + 1, index"],
+        choices : ["index = index + 1", "index = index + 2", "index = number + 1", "index"],
         answer : "index = index + 1"
     },
     {
         question : "What does JSON.Parse mean?",
-        choices : ["object to string, string to object, object to array, string to array"],
+        choices : ["object to string", "string to object", "object to array", "string to array"],
         answer : "string to object"
     },
     
@@ -71,7 +71,7 @@ function setTime() {
 
         
         document.body.children[1].appendChild(scoreEl);
-        document.getElementById("h1").setAttribute("id", "score");
+        document.getElementById("h1")[0].setAttribute("id", "score");
 
         document.getElementById("question").textContent = "Your Score: " + score;
         
