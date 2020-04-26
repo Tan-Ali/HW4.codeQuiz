@@ -54,6 +54,8 @@ function setTime() {
         }
     }, 1000) 
     return (score)
+
+    
     }
 
     function endOFGame() {
@@ -65,6 +67,22 @@ function setTime() {
 
         document.body.children[1].appendChild(scoreEl);
         document.getElementById("h1").setAttribute("id", "score");
+
+        document.getElementById("question").textContent = "Your Score: " + score;
         
+        document.body.children[1].appendChild(inputTag);
+        document.getElementsByTagName("input").setAttribute("id", "inputBox");
+
+        document.body.children[1].appendChild(submitBtn);
+        submitBtn.addEventListener("click", function(event){
+            event.preventDefault();
+
+            var scoreText = new Object();
+            scoreText.name = inputTag.value.trim();
+            scoreText.scoreNew = score;
+            
+        })
+
+
 
     }
