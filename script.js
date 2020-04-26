@@ -56,4 +56,15 @@ function setTime() {
     return (score)
     }
 
-    
+    function endOFGame() {
+        
+        var scoreEl = document.createElement("h1");
+        var inputTag = document.createElement("input");
+        var submitBtn = document.createElement("button");
+
+
+        document.body.children[1].appendChild(scoreEl);
+        document.getElementById("h1").setAttribute("id", "score");
+        
+
+    }
