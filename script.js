@@ -46,6 +46,7 @@ function setTime() {
         if(secondsRem === 0) {
             clearInterval(timeInterval);
             alert("Sorry, you are out of time!");
+            endOFGame();
             
         }
 
@@ -82,7 +83,6 @@ function setTime() {
             scoreText.scoreNew = score;
             
         })
-
-
-
     }
+
+    
