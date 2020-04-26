@@ -32,7 +32,7 @@ var questions = [
 var i = 0;
 var score = 0;
 var timer = document.querySelector("#time");
-var questionsDiv = document.querySelector("#questionsDiv");
+var questionsDiv = document.querySelector("#frontPage");
 var secondsRem = 60;
 var answerOne = document.getElementById("answerOne");
 var answerTwo = document.getElementById("answerTwo");
@@ -69,7 +69,7 @@ function setTime() {
         var inputTag = document.createElement("input");
         var submitBtn = document.createElement("button");
 
-
+        
         document.body.children[1].appendChild(scoreEl);
         document.getElementById("h1").setAttribute("id", "score");
 
