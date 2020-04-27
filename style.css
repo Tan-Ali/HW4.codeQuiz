@@ -1,0 +1,38 @@
+#buttonStarter{
+    text-align: center;
+   
+}
+
+#frontPage{
+    text-align: center;
+    
+}
+
+#answerOne{
+    color: aqua;
+}
+#answerTwo{
+    color: aqua;
+}
+#answerThree{
+    color: aqua;
+}
+#answerFour{
+    color: aqua;
+}
+
+.card{
+    background-color: beige;
+}
+
+h2{
+    color: gray;
+}
+
+#highScoreLink{
+    color: lightgreen;
+}
+
+#time{
+    color: rgb(248, 15, 15);
+}
