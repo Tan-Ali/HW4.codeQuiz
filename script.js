@@ -72,6 +72,8 @@ function endOfGame() {
     answerTwo.remove()
     answerThree.remove()
     answerFour.remove()
+
+    // could not get submit name to show up
     document.body.children[1].appendChild(scoreTag);
     document.getElementsByTagName("h1")[0].setAttribute("id", "score");
     document.getElementById("question").textContent = "Your Score: " + score;
