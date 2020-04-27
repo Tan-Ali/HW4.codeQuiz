@@ -4,7 +4,7 @@ var goBack = document.querySelector("#goBack");
 var clearHighScores = document.querySelector("#clearHighScores");
 
 // scores
-scores()
+scores();
 // function scores
 function scores() {
     storedScores = JSON.parse(localStorage.getItem("scores"));
