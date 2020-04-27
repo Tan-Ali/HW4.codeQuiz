@@ -50,7 +50,7 @@ function setTime() {
         if(secondsRem === 0) {
             clearInterval(timeInterval);
             alert("Sorry, you are out of time!");
-            endOFGame();
+            endOfGame();
             
         }
 
@@ -63,7 +63,7 @@ function setTime() {
     
     }
 
-    function endOFGame() {
+    function endOfGame() {
         
         var scoreEl = document.createElement("h1");
         var inputTag = document.createElement("input");
