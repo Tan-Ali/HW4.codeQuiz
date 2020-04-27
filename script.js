@@ -119,7 +119,7 @@ function setTime() {
 
    function storeHighScore(scoreText) {
 
-    var highScores = JSON.parse(localStorage.getItem("scores"));
+        highScores = JSON.parse(localStorage.getItem("scores"));
     if (highScores === null) {
         highScoreList.push(scoreText);
         localStorage.setItem("scores", JSON.stringify(highScoreList));
