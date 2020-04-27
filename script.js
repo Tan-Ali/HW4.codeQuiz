@@ -145,7 +145,7 @@ answerThree.hidden = true;
 answerFour.hidden = true;
 
 // Questions and Answers
-   document.getElementById("answerOne").addEventListener("ckick", function () {
+   document.getElementById("answerOne").addEventListener("click", function () {
        if (question[i]["choices"][0] === question[i]["answer"]) {
            questionsDiv.textContent = "You are correct. Great Job!";
            score++;
@@ -158,7 +158,7 @@ answerFour.hidden = true;
        quizQuestions();
    })
 
-   document.getElementById("answerTwo").addEventListener("ckick", function () {
+   document.getElementById("answerTwo").addEventListener("click", function () {
     if (question[i]["choices"][1] === question[i]["answer"]) {
         questionsDiv.textContent = "You are correct. Great Job!";
         score++;
@@ -171,7 +171,7 @@ answerFour.hidden = true;
     quizQuestions();
 })
 
-document.getElementById("answerThree").addEventListener("ckick", function () {
+document.getElementById("answerThree").addEventListener("click", function () {
     if (question[i]["choices"][3] === question[i]["answer"]) {
         questionsDiv.textContent = "You are correct. Great Job!";
         score++;
@@ -185,7 +185,7 @@ document.getElementById("answerThree").addEventListener("ckick", function () {
 })
 
 
-document.getElementById("answerFour").addEventListener("ckick", function () {
+document.getElementById("answerFour").addEventListener("click", function () {
     if (question[i]["choices"][3] === question[i]["answer"]) {
         questionsDiv.textContent = "You are correct. Great Job!";
         score++;
