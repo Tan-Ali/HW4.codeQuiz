@@ -44,9 +44,9 @@ I had trouble getting the last page to pop up giving the user the option to put 
 
 ## Pictures of work
 
-![firstpage](assets/img/firstpage.jpeg.png)
+![frontpage](assets/img/frontpage.jpeg.png)
 
-![firrstquestion](assets/img/firsquestion.jpeg.png)
+![firstquestion](assets/img/firstquestion.jpeg.png)
 
 ![secondquestion](assets/img/secondquestion.jpeg.png)
 
