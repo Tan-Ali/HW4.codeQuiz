@@ -104,7 +104,7 @@ function setTime() {
     
     document.getElementById("startQuiz").hidden = true;
         if (i === questions.length) {
-            endOFGame();
+            endOfGame();
         }
 
         else {
@@ -146,7 +146,7 @@ answerFour.hidden = true;
 
 // Questions and Answers
    document.getElementById("answerOne").addEventListener("click", function () {
-       if (question[i]["choices"][0] === question[i]["answer"]) {
+       if (questions[i]["choices"][0] === questions[i]["answer"]) {
            questionsDiv.textContent = "You are correct. Great Job!";
            score++;
        }
@@ -159,7 +159,7 @@ answerFour.hidden = true;
    })
 
    document.getElementById("answerTwo").addEventListener("click", function () {
-    if (question[i]["choices"][1] === question[i]["answer"]) {
+    if (questions[i]["choices"][1] === questions[i]["answer"]) {
         questionsDiv.textContent = "You are correct. Great Job!";
         score++;
     }
@@ -172,7 +172,7 @@ answerFour.hidden = true;
 })
 
 document.getElementById("answerThree").addEventListener("click", function () {
-    if (question[i]["choices"][3] === question[i]["answer"]) {
+    if (questions[i]["choices"][3] === questions[i]["answer"]) {
         questionsDiv.textContent = "You are correct. Great Job!";
         score++;
     }
@@ -186,7 +186,7 @@ document.getElementById("answerThree").addEventListener("click", function () {
 
 
 document.getElementById("answerFour").addEventListener("click", function () {
-    if (question[i]["choices"][3] === question[i]["answer"]) {
+    if (questions[i]["choices"][3] === questions[i]["answer"]) {
         questionsDiv.textContent = "You are correct. Great Job!";
         score++;
     }
